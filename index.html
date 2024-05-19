@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sushi Park</title>
+    <link rel="stylesheet" href="src/Css/header.css">
+    <link rel="stylesheet" href="src/Css/main.css">
+    <link rel="stylesheet" href="src/Css/menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="icon" type="image/x-icon" href="src/img/favicon.png">
+</head>
+
+<body>
+    <header>
+        <nav id="nav-bar">
+            <div class="logo">
+                <img class="img-logo" src="src/img/Design sem nome (2).png" alt="Logo">
+                <div class="logo-text">
+                    <h1>Sushi</h1>
+                    <h1><span>Park</span></h1>
+                </div>
+            </div>
+
+            <ul id="nav-list">
+                <li class="nav-item"><a href="#inicio">Inicio</a></li>
+                <li class="nav-item"><a href="#menu">Menu</a></li>
+                <li class="nav-item"><a href="#quem-somos">Quem somos</a></li>
+            </ul>
+            <button class="btn-default">Peça aqui</button>
+            <button id="mobile-btn" class="mobile-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="mobile-menu">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#inicio">Inicio</a></li>
+                <li class="nav-item"><a href="#menu">Menu</a></li>
+                <li class="nav-item"><a href="#quem-somos">Quem somos</a></li>
+            </ul>
+            <button class="btn-default">Peça aqui</button>
+        </div>
+    </header>
+
+
+    <main id="content">
+        <section id="home">
+            <div id="cta">
+                <h1 class="title">Sushi de <span>qualidade</span> e com preço <span>acessível</span></h1>
+                <p class="description"> Oferecemos uma ampla variedade de pratos especiais, combinando qualidade
+                    excepcional com preços acessíveis. Desfrute de uma experiência gastronômica única em um ambiente
+                    acolhedor e com atendimento de excelência. Venha nos visitar e saborear o melhor sushi da região.
+                </p>
+                <div id="cta-btn">
+                    <a href="#" class="btn-default">Ver cardápio</a>
+                    <a href="tel:(34)98898-0101" id="phone-btn">
+                        <button><i class="fa-solid fa-phone"></i>(34)98862-0000</button>
+                    </a>
+                </div>
+                <div class="social-media-bttn">
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            <div id="banner">
+                <img src="src/img/img main.jpg" alt="foto de um prato de sushi">
+            </div>
+        </section>
+
+        <section id="menu">
+            <h2 class="section-title">Cardapio</h2>
+            <h3 class="section-subtitle">Nossos pratos especiais</h3>
+            <div class="slider">
+                <div class="slides">
+                  <div class="slide first">
+                    <img src="src/img/combo-salmao-supremo.png" alt="Combo Salmão Supremo">
+                  </div>
+                  <div class="slide ">
+                    <img src="src/img/combo-carro-chefe.jpg" alt="Combo Carro Chefe">
+                  </div>
+                  <div class="slide">
+                    <img src="src/img/combo-patrao.jpg" alt="Combo Patrão">
+                  </div>
+                  <div class="slide">
+                    <img src="src/img/temaki-skin.jpg" alt="Temaki Skin">
+                  </div>
+                </div>
+              </div>
+
+            <section id="reviews">
+                <h2 class="section-title">Avaliações</h2>
+                <h3 class="section-subtitle">O que nossos clientes dizem</h3>
+                <div id="reviews-container">
+                    <div class="review">
+                        <div class="review-header">
+                            <img src="https://via.placeholder.com/50" alt="Avatar do usuário" class="review-avatar">
+                            <div>
+                                <h4 class="review-author">Nome do Usuário</h4>
+                                <div class="review-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="review-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+                            imperdiet,
+                            nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis
+                            dolor.</p>
+                    </div>
+                    <div class="review">
+                        <div class="review-header">
+                            <img src="https://via.placeholder.com/50" alt="Avatar do usuário" class="review-avatar">
+                            <div>
+                                <h4 class="review-author">Nome do Usuário</h4>
+                                <div class="review-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="review-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+                            imperdiet,
+                            nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis
+                            dolor.</p>
+                    </div>
+                    <div class="review">
+                        <div class="review-header">
+                            <img src="https://via.placeholder.com/50" alt="Avatar do usuário" class="review-avatar">
+                            <div>
+                                <h4 class="review-author">Nome do Usuário</h4>
+                                <div class="review-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="review-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+                            imperdiet,
+                            nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis
+                            dolor.</p>
+                    </div>
+                   
+    </main>
+
+    <script src="src/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Roboto+Slab:wght@100..900&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0E0E10;
+}
+
+header {
+  width: 100%;
+  padding: 28px 8%;
+}
+
+#nav-bar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo h1 {
+  font-size: 35px;
+  color: #f20f18;
+  cursor: pointer;
+}
+
+.logo span {
+  color: #ffff;
+  margin-left: 15px;
+}
+
+.logo img{
+  display: flex;
+  width: 100px;
+  justify-content: space-between;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.img-logo {
+  margin-right: 20px; 
+}
+
+.logo-text h1 {
+  margin: 0; 
+}
+
+
+#nav-list {
+  display: flex;
+  list-style: none;
+  gap: 5rem;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: #ffff;
+  font-weight: 600;
+}
+
+.nav-item a:hover {
+  color: #ff0008;
+  transition: .4s;
+}
+
+.btn-default {
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f20f18;
+  color: #ffff;
+  border-radius: 12px;
+  padding: 10px 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-default:hover {
+  background-color: #ff0008;
+  transition: .4s;
+}
+
+.mobile-btn {
+  display: none;
+}
+
+#mobile-menu {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  #nav-list, #nav-bar .btn-default {
+    display: none;
+  }
+
+  .mobile-btn {
+    display: block;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    color: #ffff;
+  }
+}
+#mobile-menu.active .nav-item.active a::after {
+  display: block;
+}
+
+#mobile-menu.active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#mobile-menu .nav-list{
+  list-style: none;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 12px 8px;
+}
+
+#mobile-menu .nav-item{
+  text-align: center;
+}
+
