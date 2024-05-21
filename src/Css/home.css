@@ -1,0 +1,200 @@
+#content{
+  margin-top: 20px;
+}
+  .mobile-btn {
+    display: block;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    color: #ffff;
+  }
+
+
+#mobile-menu.active .nav-item.active a::after {
+  display: block;
+}
+
+#mobile-menu.active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#mobile-menu .nav-list {
+  list-style: none;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 12px 8px;
+}
+
+#mobile-menu .nav-item {
+  text-align: center;
+}
+
+#home {
+  display: flex;
+  flex-direction: row-reverse; 
+  align-items: center;
+  justify-content: space-between;
+  min-height: calc(100vh - 160px);
+  padding: 28px 8%;
+}
+
+#banner {
+  width: 423px;
+  height: 423px;
+}
+
+#banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#cta {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+#cta .title {
+  font-size: 2rem;
+  color: #fff;
+  text-align: center;
+}
+
+#cta .title span {
+  color: #f20f18;
+}
+
+#cta .description {
+  font-size: 1.2rem;
+  margin-left: 2rem; 
+  color: #fff;
+}
+
+#cta-btn {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  
+}
+
+#cta-btn a {
+  text-decoration: none;
+  color: #fff;
+  height: 48px;
+}
+
+#cta-btn button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f20f18;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+#cta-btn button:hover{
+  background-color: #ff0008;
+}
+
+#cta-btn button i {
+  margin-right: 8px;
+}
+
+.social-media-bttn {
+  display: flex;
+  gap: 1rem;
+  margin: 2rem;
+  justify-content: center;
+}
+.social-media-bttn i:hover{
+color: #ff0008;
+}
+
+.social-media-bttn a {
+  color: #fff;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+
+#banner, #banner img{
+  width: 500px;
+}
+#cta{
+  width: 100%;
+  text-align: center;
+  align-items: center;
+}
+#cta-btn a {
+
+  height: 75px;
+}
+
+
+.section-title {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+
+@media screen and (max-width: 678px) {
+  #home {
+    min-height: auto; /* Remover altura mínima */
+    padding: 20px 8%; /* Adicionar padding nas laterais */
+    flex-direction: column; /* Alterar a direção da flexbox para empilhar verticalmente */
+    align-items: center; /* Centralizar os itens verticalmente */
+    margin-bottom: 0; /* Remover margem inferior */
+  }
+
+  #cta {
+    width: 100%; /* Expandir para a largura total */
+    text-align: center; /* Centralizar o texto */
+    align-items: center; /* Centralizar os itens verticalmente */
+    margin-top: 20px; /* Reduzir o espaçamento superior */
+    margin-bottom: 20px; /* Adicionar margem inferior */
+    padding: 0 8%; /* Adicionar padding nas laterais */
+  }
+
+  #banner {
+    display: none; /* Ocultar o banner */
+  }
+}
+@media screen and (max-width: 800px) {
+  #home {
+    min-height: auto;
+    padding: 20px 8%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #cta {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0;
+  }
+
+  #banner {
+    display: none;
+  }
+
+  #menu {
+    padding: 20px 8%; /* Adiciona padding nas laterais */
+    margin-top: -20px; /* Remove o espaçamento extra entre as seções */
+  }
+
+  #menu p {
+    margin: 20px 0; /* Ajusta a margem vertical */
+  }
+}
+

@@ -3,33 +3,30 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   min-height: 100vh;
   margin: 0; 
   padding: 0; 
-  overflow: hidden; /* Para garantir que o pseudo-elemento não saia do contêiner */
-
+  overflow: hidden;
 }
 
 #menu p {
   color: #fff;
-  font-size: 26px;
+  font-size: 1.2rem;
   text-align: center;
-  margin: 20px auto; /* Ajusta a margem superior e inferior */
-  padding: 10px 10px; /* Adiciona espaçamento nas bordas esquerda e direita */
-  max-width: 80%; /* Define um limite máximo de largura para o parágrafo */
-  line-height: 1.6; /* Ajusta a altura da linha para melhor legibilidade */
+  margin: 20px auto; 
+  padding: 10px 10px; 
+  max-width: 80%; 
+  line-height: 1.6; 
 }
 #menu span{
   color: #f20f18;
   font-weight: bold;
 }
 
-.section-title{
-color: #f20f18;
-}
 
-.section-subtitle{
+
+.section-title{
+  font-size: 2rem;
   color:#fff ;
 }
 
@@ -80,23 +77,15 @@ color: #f20f18;
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-@media (max-width: 768px) {
-  #menu {
-    padding: 20px; /* Adiciona padding para dispositivos móveis */
-  }
-  .slider{
-    width: 60%;
-  }
-  .prev, .next{
-  display: none;
-  }
-  .slide img {
-    width: 100%;
-    display: flex;
-   
-  }
-
+@media screen and (max-width: 768px) {
+ .slider{
+  width: 300px;
+ }
+ .next, .prev{
+ display: flexbox;
+ }
 }
+
 
 
 
