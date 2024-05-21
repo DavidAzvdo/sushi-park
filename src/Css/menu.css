@@ -90,6 +90,11 @@ color: #f20f18;
   .prev, .next{
   display: none;
   }
+  .slide img {
+    width: 100%;
+    display: flex;
+   
+  }
 
 }
 
