@@ -83,11 +83,6 @@
   text-decoration: none;
 }
 
-@media screen and (max-width: 800px) {
-#home{
-  min-height: 100%;
-  padding-top: 0px;
-}
 
 #banner, #banner img{
   display: none;
@@ -100,7 +95,6 @@
 #cta-btn a {
 
   height: 75px;
-}
 }
 
 #reviews {
@@ -149,4 +143,9 @@
   color: #777;
 }
 
-
+@media screen and (max-width: 800px) {
+  #home{
+    min-height: 100%;
+    padding-top: 0px;
+  }
+}

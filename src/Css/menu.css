@@ -1,13 +1,30 @@
 #menu {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  margin: 20px; 
-  padding: 20px; 
-  
+  margin: 0; 
+  padding: 0; 
+  overflow: hidden; /* Para garantir que o pseudo-elemento não saia do contêiner */
+
 }
+
+#menu p {
+  color: #fff;
+  font-size: 26px;
+  text-align: center;
+  margin: 20px auto; /* Ajusta a margem superior e inferior */
+  padding: 10px 10px; /* Adiciona espaçamento nas bordas esquerda e direita */
+  max-width: 80%; /* Define um limite máximo de largura para o parágrafo */
+  line-height: 1.6; /* Ajusta a altura da linha para melhor legibilidade */
+}
+#menu span{
+  color: #f20f18;
+  font-weight: bold;
+}
+
 .section-title{
 color: #f20f18;
 }
@@ -16,28 +33,11 @@ color: #f20f18;
   color:#fff ;
 }
 
-.dish {
-  color: #f20f18;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1rem;
-  background-color: #0d0d0e;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  color: #fff;
-}
-.dish span {
-  text-align: center; 
-  font-size: 18px;
-}
-
 .slider {
   position: relative;
-  width: 500px;
-  height: 350px;
+  width: 30%;
+  max-width: 1000px;
   overflow: hidden;
-  border-radius: 10px;
 }
 
 .slides {
@@ -52,19 +52,47 @@ color: #f20f18;
 
 .slide img {
   width: 100%;
-  height: 350px; 
-  object-fit: cover;
+  display: flex;
+ 
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 @media (max-width: 768px) {
-  .slider {
-    width: calc(100% - 2px);
+  #menu {
+    padding: 20px; /* Adiciona padding para dispositivos móveis */
+  }
+  .slider{
+    width: 60%;
+  }
+  .prev, .next{
+  display: none;
   }
 
-  .slide img {
-    height: 100%;
-  }
 }
+
 
 
 

@@ -48,7 +48,6 @@
         </div>
     </header>
 
-
     <main id="content">
         <section id="home">
             <div id="cta">
@@ -74,89 +73,23 @@
         </section>
 
         <section id="menu">
-            <h2 class="section-title">Cardapio</h2>
+            <h2 class="section-title">Cardápio</h2>
             <h3 class="section-subtitle">Nossos pratos especiais</h3>
+            <p>Nosso cardápio é cuidadosamente elaborado para proporcionar uma experiência gastronômica única, com opções que agradam todos os paladares. <br> <span>Confira alguns dos destaques do nosso menu:</span></p>
             <div class="slider">
                 <div class="slides">
-                  <div class="slide first">
-                    <img src="src/img/combo-salmao-supremo.png" alt="Combo Salmão Supremo">
-                  </div>
-                  <div class="slide ">
-                    <img src="src/img/combo-carro-chefe.jpg" alt="Combo Carro Chefe">
-                  </div>
-                  <div class="slide">
-                    <img src="src/img/combo-patrao.jpg" alt="Combo Patrão">
-                  </div>
-                  <div class="slide">
-                    <img src="src/img/temaki-skin.jpg" alt="Temaki Skin">
-                  </div>
+                    <div class="slide"><img src="src/img/combo-carro-chefe.jpg" alt="combo carro chefe"></div>
+                    <div class="slide"><img src="src/img/combo-salmao-supremo.png" alt="combo salmão supremo"></div>
+                    <div class="slide"><img src="src/img/combo-patrao.jpg" alt="combo patrão"></div>
+                    <div class="slide"><img src="src/img/combo-perfeito.jpg" alt="combo perfeito"></div>
+                    <div class="slide"><img src="src/img/combo-solitario.jpg" alt="combo solitário"></div>
+                    <!-- Add more slides as needed -->
                 </div>
-              </div>
-
-            <section id="reviews">
-                <h2 class="section-title">Avaliações</h2>
-                <h3 class="section-subtitle">O que nossos clientes dizem</h3>
-                <div id="reviews-container">
-                    <div class="review">
-                        <div class="review-header">
-                            <img src="https://via.placeholder.com/50" alt="Avatar do usuário" class="review-avatar">
-                            <div>
-                                <h4 class="review-author">Nome do Usuário</h4>
-                                <div class="review-rating">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <p class="review-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-                            imperdiet,
-                            nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis
-                            dolor.</p>
-                    </div>
-                    <div class="review">
-                        <div class="review-header">
-                            <img src="https://via.placeholder.com/50" alt="Avatar do usuário" class="review-avatar">
-                            <div>
-                                <h4 class="review-author">Nome do Usuário</h4>
-                                <div class="review-rating">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star-half-alt"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <p class="review-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-                            imperdiet,
-                            nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis
-                            dolor.</p>
-                    </div>
-                    <div class="review">
-                        <div class="review-header">
-                            <img src="https://via.placeholder.com/50" alt="Avatar do usuário" class="review-avatar">
-                            <div>
-                                <h4 class="review-author">Nome do Usuário</h4>
-                                <div class="review-rating">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star-half-alt"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <p class="review-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-                            imperdiet,
-                            nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis
-                            dolor.</p>
-                    </div>
-                   
+                <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="next" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+        </section>
     </main>
-
     <script src="src/script.js"></script>
 </body>
 

@@ -3,22 +3,24 @@ $(document).ready(function() {
     $('#mobile-menu').toggleClass('active');
     $('#mobile-btn').find('i').toggleClass('fa-x');
   });
-});
-let currentIndex = 0;
-const slides = document.querySelectorAll('.slide');
-const totalSlides = slides.length;
 
-function showNextSlide() {
-  currentIndex++;
-  if (currentIndex >= totalSlides) {
-    currentIndex = 0;
+  // Defina currentIndex e totalSlides
+  let currentIndex = 0;
+  const totalSlides = $('.slide').length;
+
+  function showNextSlide() {
+    currentIndex++;
+    if (currentIndex >= totalSlides) {
+      currentIndex = 0;
+    }
+    updateSlidePosition();
   }
-  updateSlidePosition();
-}
 
-function updateSlidePosition() {
-  const slidesContainer = document.querySelector('.slides');
-  slidesContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
-}
+  function updateSlidePosition() {
+    const slidesContainer = document.querySelector('.slides');
+    slidesContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
+  }
 
-setInterval(showNextSlide, 3000); // Change slide every 3 seconds
+  // Defina o intervalo após o carregamento do documento
+  setInterval(showNextSlide, 5000);
+});
