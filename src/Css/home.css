@@ -45,6 +45,9 @@
   height: 100%;
   object-fit: cover;
 }
+#banner img:hover{
+  transform: scale(1.01)
+}
 
 #cta {
   width: 60%;
@@ -95,6 +98,7 @@
 }
 #cta-btn button:hover{
   background-color: #ff0008;
+  transition: 0.4s;
 }
 
 #cta-btn button i {
@@ -109,6 +113,7 @@
 }
 .social-media-bttn i:hover{
 color: #ff0008;
+transition: 0.4s;
 }
 
 .social-media-bttn a {

@@ -30,9 +30,19 @@
   font-size: 2rem;
   color: #fff;
 }
+
+.section-title:hover{
+color: #f20f18;
+cursor: pointer;
+transition: 0.4s;
+}
+
 .carousel-item img {
   display: block;
   transition: none !important;
+}
+.carousel-item img:hover {
+  transform: scale(1.05)
 }
 
 

@@ -1,6 +1,4 @@
-/* Estilo para a seção de avaliações */
 #reviews {
-  background-color: transparent;
   padding: 50px 0;
   text-align: center;
 }
@@ -17,8 +15,8 @@
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
-  max-width: 300px; /* Limita a largura máxima dos cards */
-  margin: 0 auto 30px; /* Centraliza e adiciona espaço abaixo dos cards */
+  max-width: 200px; /* Diminuir ainda mais o tamanho do card */
+  margin: 0 auto 20px; /* Ajustar a margem inferior */
 }
 
 .card:hover {
@@ -26,39 +24,36 @@
 }
 
 .card-img-top {
-   max-width: 25%; 
-  height: auto; 
+  max-width: 50%; /* Manter a largura da imagem proporcional ao novo tamanho do card */
+  height: auto;
   object-fit: cover;
-  display: block; 
-  margin: 0 auto; 
-  margin-top: 15px; 
- 
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px; /* Ajustar a margem superior */
 }
 
-
 .card-body {
-  padding: 20px;
-  
+  padding: 10px; /* Reduzir o padding */
 }
 
 .card-title {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
+  font-size: 1rem; /* Reduzir ainda mais o tamanho da fonte */
+  margin-bottom: 8px; /* Ajustar a margem inferior */
   color: #333;
 }
 
 .review-stars {
   color: #ffcd3c;
-  margin-bottom: 15px;
+  margin-bottom: 8px; /* Ajustar a margem inferior */
 }
 
 .card-text {
-  font-size: 1rem;
+  font-size: 0.8rem; /* Reduzir ainda mais o tamanho da fonte */
   color: #666666;
 }
 
 @media (max-width: 768px) {
   #reviews .card {
-      margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 }

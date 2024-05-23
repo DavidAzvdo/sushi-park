@@ -14,7 +14,11 @@ display: flex;
   font-weight: bold;
   font-size: 30px;
 }
-
+#contato h2:hover{
+  color: #FF0008;
+  cursor: pointer;
+  transition: 0.4s;
+}
 .info-left p {
   margin-bottom: 15px;
   font-size: 15px;
@@ -28,6 +32,7 @@ display: flex;
 
 .info-left a:hover{
   color: #FF0008;
+  transition: 0.4s;
 }
 .info-right {
   text-align: center;
@@ -43,7 +48,8 @@ display: flex;
   margin-right: 15px;
 }
 .social-media a:hover{
-  color:#FF0008
+  color:#FF0008;
+  transition: 0.4s;
 }
 .certificado img {
   max-width: 60px;
