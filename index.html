@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="src/Css/header.css">
     <link rel="stylesheet" href="src/Css/home.css">
     <link rel="stylesheet" href="src/Css/menu.css">
+    <link rel="stylesheet" href="src/Css/reviews.css">
+    <link rel="stylesheet" href="src/Css/footer.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -22,7 +26,7 @@
     <header>
         <nav id="nav-bar">
             <div class="logo">
-                <img class="img-logo" src="src/img/Design sem nome (2).png" alt="Logo">
+                <img class="img-logo" src="src/img/img-logo.png" alt="Logo">
                 <div class="logo-text">
                     <h1>Sushi</h1>
                     <h1><span>Park</span></h1>
@@ -32,7 +36,7 @@
             <ul id="nav-list">
                 <li class="nav-item"><a href="#inicio">Inicio</a></li>
                 <li class="nav-item"><a href="#menu">Menu</a></li>
-                <li class="nav-item"><a href="#quem-somos">Quem somos</a></li>
+                <li class="nav-item"><a href="#quem-somos">Contato</a></li>
             </ul>
             <button class="btn-default">Peça aqui</button>
             <button id="mobile-btn" class="mobile-btn">
@@ -43,7 +47,7 @@
             <ul class="nav-list">
                 <li class="nav-item"><a href="#inicio">Inicio</a></li>
                 <li class="nav-item"><a href="#menu">Menu</a></li>
-                <li class="nav-item"><a href="#quem-somos">Quem somos</a></li>
+                <li class="nav-item"><a href="#quem-somos">Contato</a></li>
             </ul>
             <button class="btn-default">Peça aqui</button>
         </div>
@@ -77,21 +81,153 @@
 
         <section id="menu">
             <h3 class="section-title">Nossos pratos especiais</h3>
-            <p>Nosso cardápio é cuidadosamente elaborado para proporcionar uma experiência gastronômica única, com opções que agradam todos os paladares. <br> <span>Confira alguns dos destaques do nosso menu:</span></p>
-            <div class="slider">
-                <div class="slides">
-                    <div class="slide"><img src="src/img/combo-carro-chefe.jpg" alt="combo carro chefe"></div>
-                    <div class="slide"><img src="src/img/combo-patrao.jpg" alt="combo patrão"></div>
-                    <div class="slide"><img src="src/img/combo-perfeito.jpg" alt="combo perfeito"></div>
-                    <div class="slide"><img src="src/img/combo-solitario.jpg" alt="combo solitário"></div>
-                    <!-- Add more slides as needed -->
+            <p>Nosso cardápio é cuidadosamente elaborado para proporcionar uma experiência gastronômica única, com
+                opções que agradam todos os paladares. <br> <span>Confira alguns dos destaques do nosso menu:</span></p>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                        aria-label="Slide 5"></button>
                 </div>
-                <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
-                <button class="next" onclick="moveSlide(1)">&#10095;</button>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="src/img/combo-carro-chefe.jpg" alt="Combo Carro Chefe">
+                        <div class="carousel-caption d-none d-md-block">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="src/img/combo-patrao.jpg" alt="Combo Patrão">
+                        <div class="carousel-caption d-none d-md-block">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="src/img/combo-perfeito.jpg" alt="Combo Perfeito">
+                        <div class="carousel-caption d-none d-md-block">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="src/img/combo-salmao-supremo.png" alt="Combo Salmão Supremo">
+                        <div class="carousel-caption d-none d-md-block">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="src/img/combo-solitario.jpg" alt="Combo Solitário">
+                        <div class="carousel-caption d-none d-md-block">
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span aria-hidden="true"></span> <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span aria-hidden="true"></span>
+
+                </button>
+            </div>
+
+        </section>
+        <section id="reviews">
+            <h3>O que dizem nossos clientes</h3>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img class="card-img-top" src="src/img/user 1.jpg" alt="User 1">
+                        <div class="card-body">
+                            <h4 class="card-title">Ana Silva</h4>
+                            <div class="review-stars">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star "></i>
+                            </div>
+                            <p class="card-text">Adorei o sushi, atendimento excelente e ambiente acolhedor. Voltarei
+                                mais vezes!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img class="card-img-top" src="src/img/user 2.jpg" alt="User 2">
+                        <div class="card-body">
+                            <h4 class="card-title">João Pereira</h4>
+                            <div class="review-stars">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <p class="card-text">O melhor sushi da cidade, sem dúvida! Ingredientes frescos e sabores
+                                incríveis. Recomendo muito</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img class="card-img-top" src="src/img/user 3.jpg" alt="User 3">
+                        <div class="card-body">
+                            <h4 class="card-title">Mariana Costa</h4>
+                            <div class="review-stars">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-alt"></i>
+                            </div>
+                            <p class="card-text">Experiência gastronômica incrível, recomendo a todos que apreciam uma
+                                boa comida japonesa.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
+
     </main>
+    <footer id="contato">
+        <div class="container">
+            <h2>Fale Conosco</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="info-left">
+                        <p>Envie-nos sua dúvida, reclamação, sugestão ou elogio. Ouvir você é importante para nós.</p>
+                        <p>Horário de Funcionamento: Quarta a Segunda, das 18:00 às 00:00 <br> (O delivery encerra 23:30)</p>
+                        <a href="https://www.google.com.br/maps/place/Av.+Jos%C3%A9+Abdulmassih,+1302+-+Shopping+Park,+Uberl%C3%A2ndia+-+MG,+38425-565/@-18.985114,-48.2696334,17z/data=!3m1!4b1!4m6!3m5!1s0x94a45af02e6ce363:0x38aa3871c62c9023!8m2!3d-18.985114!4d-48.2670585!16s%2Fg%2F11c5mxx6cm?entry=ttu" target="_blank">
+                        Av. José Abdulmassih, 1302 - Shopping Park</a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="info-right">
+                        <div class="social-media">
+                            <a href="#"><i class="fab fa-whatsapp"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                        <div class="certificado">
+                            <img src="src/img/LOGO.82d00297.png" alt="Certificado de qualidade">
+                        </div>
+                        <div class="copyright">
+                            Copyright © David Azevedo 2024
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+
     <script src="src/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

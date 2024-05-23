@@ -11,6 +11,8 @@ body {
   padding: 0;
   box-sizing: border-box;
   position: relative;
+  overflow-x: hidden !important;
+
 }
 
 body::before {
@@ -22,6 +24,6 @@ body::before {
   background-image: url('../img/riccardo-bergamini-O2yNzXdqOu0-unsplash.jpg');
   background-size: cover;
   background-position: center;
-  filter: brightness(0.02); /* Altere o valor para escurecer ou clarear a imagem */
+  filter: brightness(0.07); /* Altere o valor para escurecer ou clarear a imagem */
   z-index: -1;
 }

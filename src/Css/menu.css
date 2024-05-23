@@ -4,8 +4,8 @@
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
-  margin: 0; 
-  padding: 0; 
+  margin: 0;
+  padding: 0;
   overflow: hidden;
 }
 
@@ -13,80 +13,41 @@
   color: #fff;
   font-size: 1.2rem;
   text-align: center;
-  margin: 20px auto; 
-  padding: 10px 10px; 
-  max-width: 80%; 
-  line-height: 1.6; 
+  margin: 20px auto;
+  padding: 10px 10px;
+  max-width: 80%;
+  line-height: 1.6;
 }
-#menu span{
+
+#menu span {
   color: #f20f18;
   font-weight: bold;
 }
 
 
 
-.section-title{
+.section-title {
   font-size: 2rem;
-  color:#fff ;
+  color: #fff;
+}
+.carousel-item img {
+  display: block;
+  transition: none !important;
 }
 
-.slider {
-  position: relative;
-  width: 30%;
-  max-width: 1000px;
-  overflow: hidden;
-}
 
-.slides {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-}
 
-.slide {
-  min-width: 100%;
-  box-sizing: border-box;
-}
-
-.slide img {
-  width: 100%;
-  display: flex;
- 
-}
-
-.prev, .next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-  z-index: 10;
-}
-
-.prev {
-  left: 10px;
-}
-
-.next {
-  right: 10px;
-}
-
-.prev:hover, .next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
+/* CSS para ajustes em dispositivos móveis */
 @media screen and (max-width: 768px) {
- .slider{
-  width: 300px;
- }
- .next, .prev{
- display: flexbox;
- }
+  /* Diminui o tamanho do slider */
+  .carousel-item img {
+    max-width: 300px;
+    max-height: 300px; /* Define a altura máxima para manter a proporção */
+    margin: 0 auto; /* Centraliza o slide */
+  }
+  
+  /* Adiciona espaçamento lateral */
+  .carousel-inner {
+    padding: 0 10px; /* Adiciona 20 pixels de preenchimento em ambos os lados */
+  }
 }
-
-
-
-
-

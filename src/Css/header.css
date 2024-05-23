@@ -1,9 +1,7 @@
-
-
 header {
   width: 100%;
   padding: 15px 8%;
-  background-color: #0E0E10;
+  background-color: rgba(24, 24, 24, 0.352); /* Define a cor de fundo com opacidade */
 }
 
 #nav-bar {
@@ -47,6 +45,7 @@ header {
   display: flex;
   list-style: none;
   gap: 5rem;
+  
 }
 
 .nav-item a {
@@ -75,12 +74,16 @@ header {
 
 .btn-default:hover {
   background-color: #ff0008;
- 
 }
-
 .mobile-btn {
   display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  color: #ffff;
 }
+
 
 #mobile-menu {
   display: none;
@@ -90,6 +93,9 @@ header {
   #nav-list,
   #nav-bar .btn-default {
     display: none;
-    
+  }
+
+  .mobile-btn {
+    display: flex;
   }
 }
