@@ -98,7 +98,7 @@ margin-bottom: 15px;
 }
 .menu-controls {
   position: absolute;
-  top: calc(50% - 50px); /* Ajuste a posição vertical dos botões */
+  top: calc(50% - 45px); /* Ajuste a posição vertical dos botões */
   left: 0;
   width: 100%;
   display: flex;
