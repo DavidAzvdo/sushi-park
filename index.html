@@ -11,11 +11,8 @@
     <link rel="stylesheet" href="src/Css/menu.css">
     <link rel="stylesheet" href="src/Css/reviews.css">
     <link rel="stylesheet" href="src/Css/footer.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -24,7 +21,7 @@
 
 <body>
     <header>
-        <nav id="nav-bar">
+        <nav id="nav-bar" data-aos="fade-down">
             <div class="logo">
                 <img class="img-logo" src="src/img/img-logo.png" alt="Logo">
                 <div class="logo-text">
@@ -43,7 +40,7 @@
                 <i class="fa-solid fa-bars"></i>
             </button>
         </nav>
-        <div id="mobile-menu" class="mobile-menu">
+        <div id="mobile-menu" class="mobile-menu" data-aos="fade-in">
             <ul class="nav-list">
                 <li class="nav-item"><a href="#inicio">Inicio</a></li>
                 <li class="nav-item"><a href="#menu">Menu</a></li>
@@ -53,7 +50,7 @@
         </div>
     </header>
 
-    <main id="content">
+    <main id="content" data-aos="fade-up">
         <section id="home">
             <div id="cta">
                 <h1 class="title">Sushi de <span>qualidade</span> e com preço <span>acessível</span></h1>
@@ -79,121 +76,91 @@
             </div>
         </section>
 
-        <section id="menu">
-            <h3 class="section-title">Nossos pratos especiais</h3>
-            <p>Nosso cardápio é cuidadosamente elaborado para proporcionar uma experiência gastronômica única, com
-                opções que agradam todos os paladares. <br> <span>Confira alguns dos destaques do nosso menu:</span></p>
-            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                        class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-                        aria-label="Slide 4"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
-                        aria-label="Slide 5"></button>
-                </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="src/img/combo-carro-chefe.jpg" alt="Combo Carro Chefe">
-                        <div class="carousel-caption d-none d-md-block">
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="src/img/combo-patrao.jpg" alt="Combo Patrão">
-                        <div class="carousel-caption d-none d-md-block">
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="src/img/combo-perfeito.jpg" alt="Combo Perfeito">
-                        <div class="carousel-caption d-none d-md-block">
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="src/img/combo-salmao-supremo.png" alt="Combo Salmão Supremo">
-                        <div class="carousel-caption d-none d-md-block">
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="src/img/combo-solitario.jpg" alt="Combo Solitário">
-                        <div class="carousel-caption d-none d-md-block">
-                        </div>
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="prev">
-                    <span aria-hidden="true"></span> <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="next">
-                    <span aria-hidden="true"></span>
-
-                </button>
+        <section id="menu" data-aos="fade-right">
+    <h3 class="section-title">Nossos pratos especiais</h3>
+    <p>Nosso cardápio é cuidadosamente elaborado para proporcionar uma experiência gastronômica única, com
+        opções que agradam todos os paladares. <br> <span>Confira alguns dos destaques do nosso menu:</span></p>
+    <div class="container-menu" id="photo-carousel">
+        <div class="carousel">
+            <div class="carousel-item-menu">
+                <img src="src/img/combo-carro-chefe.jpg" alt="Foto 1">
             </div>
-
-        </section>
-        <section id="reviews">
-            <h3>O que dizem nossos clientes</h3>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card">
-                        <img class="card-img-top" src="src/img/user 1.jpg" alt="User 1">
-                        <div class="card-body">
-                            <h4 class="card-title">Ana Silva</h4>
-                            <div class="review-stars">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star "></i>
-                            </div>
-                            <p class="card-text">Adorei o sushi, atendimento excelente e ambiente acolhedor. Voltarei
-                                mais vezes!</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img class="card-img-top" src="src/img/user 2.jpg" alt="User 2">
-                        <div class="card-body">
-                            <h4 class="card-title">João Pereira</h4>
-                            <div class="review-stars">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                            <p class="card-text">O melhor sushi da cidade, sem dúvida! Ingredientes frescos e sabores
-                                incríveis. Recomendo muito</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img class="card-img-top" src="src/img/user 3.jpg" alt="User 3">
-                        <div class="card-body">
-                            <h4 class="card-title">Mariana Costa</h4>
-                            <div class="review-stars">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star-half-alt"></i>
-                            </div>
-                            <p class="card-text">Experiência gastronômica incrível, recomendo a todos que apreciam uma
-                                boa comida japonesa.</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="carousel-item-menu">
+                <img src="src/img/combo-patrao.jpg" alt="Foto 2">
             </div>
-        </section>
+            <div class="carousel-item-menu">
+                <img src="src/img/combo-perfeito.jpg" alt="Foto 3">
+            </div>
+            <div class="carousel-item-menu">
+                <img src="src/img/combo-salmao-supremo.png" alt="Foto 4">
+            </div>
+            <div class="carousel-item-menu">
+                <img src="src/img/combo-solitario.jpg" alt="Foto 5">
+            </div>
+            <div class="carousel-item-menu">
+                <img src="src/img/combo-casual.jpg" alt="Foto 6">
+            </div>
+            <div class="carousel-item-menu">
+                <img src="src/img/combo-poderoso.jpg" alt="Foto 6">
+            </div>
+        </div>
+        
+        <div class="menu-controls">
+            <button class="menu-control prev" data-target="#photo-carousel">&lt;</button>
+            <button class="menu-control next" data-target="#photo-carousel">&gt;</button>
+        </div>
+    </div>
+</section>
+
+<section id="reviews" data-aos="fade-left">
+    <h3>O que dizem nossos clientes</h3>
+    <div class="cards">
+        <div class="card">
+            <img class="user" src="src/img/user 2.jpg" alt="">
+            <h4>João Carlos</h4>
+            <div class="stars"
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <p>Experiência gastronômica incrível recomendo a todos que apreciam uma
+                boa comida japonesa </p>
+        </div>
+        <div class="card" data-aos="zoom-in">
+            <img class="user" src="src/img/user 1.jpg" alt="">
+            <h4>Mariana Costa</h4>
+            <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <p>O melhor sushi da cidade, sem dúvida! Ingredientes frescos e sabores
+                incríveis. Recomendo muito</p>
+        </div>
+        <div class="card">
+            <img class="user" src="src/img/user 3.jpg" alt="">
+            <h4>Andressa Lima</h4>
+            <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half"></i>
+            </div>
+            <p>Adorei o sushi, atendimento excelente. Vou pedir
+                mais vezes!</p>
+        </div>
+       
+    </div>
+</section>
+
 
     </main>
-    <footer id="contato">
+    <footer id="contato" data-aos="fade-up">
         <div class="container">
             <h2>Fale Conosco</h2>
             <div class="row">
@@ -225,9 +192,10 @@
     
 
     <script src="src/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 
 </html>

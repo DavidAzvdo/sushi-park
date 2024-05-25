@@ -1,59 +1,92 @@
-#reviews {
-  padding: 50px 0;
-  text-align: center;
-}
 
 #reviews h3 {
   font-size: 2rem;
-  margin-bottom: 30px;
   color: #fff;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#reviews h3:hover{
+  color: #f20f18;
+  transition: .4s;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
+  max-width: 980px;
+  margin: 0 auto;
 }
 
 .card {
-  border: none;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.558);
   border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-  max-width: 200px; /* Diminuir ainda mais o tamanho do card */
-  margin: 0 auto 20px; /* Ajustar a margem inferior */
+  box-shadow: 6px 6px 6px ;
 }
-
+.stars i{
+  color: rgb(200, 200, 21);
+  font-size: 15px;
+}
+ .card h4{
+  color: #f20f18; 
+}
+.card p{
+  color: #fff;
+  font-size: 16px;
+  padding-bottom: 10px;
+}
 .card:hover {
-  transform: translateY(-10px);
+  transform: scale(1.05); 
+  transition: transform 0.4s ease; 
 }
 
-.card-img-top {
-  max-width: 50%; /* Manter a largura da imagem proporcional ao novo tamanho do card */
-  height: auto;
-  object-fit: cover;
+.user {
+  width: 25%; 
+  height: auto; 
   display: block;
-  margin: 0 auto;
-  margin-top: 10px; /* Ajustar a margem superior */
-}
-
-.card-body {
-  padding: 10px; /* Reduzir o padding */
-}
-
-.card-title {
-  font-size: 1rem; /* Reduzir ainda mais o tamanho da fonte */
-  margin-bottom: 8px; /* Ajustar a margem inferior */
-  color: #333;
-}
-
-.review-stars {
-  color: #ffcd3c;
-  margin-bottom: 8px; /* Ajustar a margem inferior */
-}
-
-.card-text {
-  font-size: 0.8rem; /* Reduzir ainda mais o tamanho da fonte */
-  color: #666666;
+  margin-top: 10px; 
+border-radius: 40px;
 }
 
 @media (max-width: 768px) {
-  #reviews .card {
+  #reviews h3 {
+    font-size: 1.5rem; /* Reduzir o tamanho da fonte do título */
+    margin-bottom: 20px; /* Reduzir a margem inferior do título */
+  }
+
+  .cards {
+    display: block;
+    padding: 0 10px; /* Adicionar espaçamento lateral na tela */
+    max-width: 60%; /* Definir a largura máxima como 100% */
+  }
+
+  .card {
+    border-radius: 8px; /* Reduzir o raio do arredondamento da borda */
+    box-shadow: 4px 4px 4px; /* Reduzir o desfoque da sombra */
     margin-bottom: 20px;
+
+  }
+
+  .stars i {
+    font-size: 12px; /* Reduzir o tamanho do ícone de estrela */
+  }
+
+  .card h4 {
+    font-size: 1rem; /* Reduzir o tamanho da fonte do título da carta */
+  }
+
+  .card p {
+    font-size: 14px; /* Reduzir o tamanho da fonte do texto da carta */
+  }
+
+  .user {
+    width: 20%; /* Reduzir a largura da imagem do usuário */
+    border-radius: 20px; /* Reduzir o raio do arredondamento da borda */
   }
 }

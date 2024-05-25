@@ -84,10 +84,10 @@ header {
   color: #ffff;
 }
 
-
 #mobile-menu {
   display: none;
 }
+
 
 @media screen and (max-width: 800px) {
   #nav-list,
