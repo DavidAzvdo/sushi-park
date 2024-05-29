@@ -13,10 +13,12 @@
     <link rel="stylesheet" href="src/Css/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="icon" type="image/x-icon" href="src/img/favicon.png">
+    
 </head>
 
 <body>
@@ -78,38 +80,30 @@
 
         <section id="menu" data-aos="fade-right">
     <h3 class="section-title">Nossos pratos especiais</h3>
-    <p>Nosso cardápio é cuidadosamente elaborado para proporcionar uma experiência gastronômica única, com
+    <p class="description">Nosso cardápio é cuidadosamente elaborado para proporcionar uma experiência gastronômica única, com
         opções que agradam todos os paladares. <br> <span>Confira alguns dos destaques do nosso menu:</span></p>
-    <div class="container-menu" id="photo-carousel">
-        <div class="carousel">
-            <div class="carousel-item-menu">
-                <img src="src/img/combo-carro-chefe.jpg" alt="Foto 1">
-            </div>
-            <div class="carousel-item-menu">
-                <img src="src/img/combo-patrao.jpg" alt="Foto 2">
-            </div>
-            <div class="carousel-item-menu">
-                <img src="src/img/combo-perfeito.jpg" alt="Foto 3">
-            </div>
-            <div class="carousel-item-menu">
-                <img src="src/img/combo-salmao-supremo.png" alt="Foto 4">
-            </div>
-            <div class="carousel-item-menu">
-                <img src="src/img/combo-solitario.jpg" alt="Foto 5">
-            </div>
-            <div class="carousel-item-menu">
-                <img src="src/img/combo-casual.jpg" alt="Foto 6">
-            </div>
-            <div class="carousel-item-menu">
-                <img src="src/img/combo-poderoso.jpg" alt="Foto 6">
-            </div>
+   <div class="container">
+    <div class="slider-wrapper">
+        <button id="prev-slide" class="slide-btn material-symbols-outlined">chevron_left</button>
+        <div class="image-list">
+            <img class="image-item" src="src/img/combo-carro-chefe.jpg" alt="">
+            <img class="image-item" src="src/img/combo-casual.jpg" alt="">
+            <img class="image-item" src="src/img/combo-patrao.jpg" alt="">
+            <img class="image-item" src="src/img/combo-perfeito.jpg" alt="">
+            <img class="image-item" src="src/img/combo-poderoso.jpg" alt="">
+            <img class="image-item" src="src/img/combo-salmao-supremo.png" alt="">
+            <img class="image-item" src="src/img/combo-solitario.jpg" alt="">
         </div>
-        
-        <div class="menu-controls">
-            <button class="menu-control prev" data-target="#photo-carousel">&lt;</button>
-            <button class="menu-control next" data-target="#photo-carousel">&gt;</button>
+        <button id="next-slide" class="slide-btn material-symbols-outlined">chevron_right</button>
+
+
+    </div>
+    <div class="slider-scrollbar">
+        <div class="scrollbar-track">
+            <div class="scrollbar-thumb"></div>
         </div>
     </div>
+   </div>
 </section>
 
 <section id="reviews" data-aos="fade-left">

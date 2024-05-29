@@ -1,10 +1,9 @@
 #menu {
-  position: relative;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   min-height: 100vh;
- 
   overflow: hidden;
 }
 
@@ -18,7 +17,7 @@
   line-height: 1.6;
 }
 
-#menu span {
+.description span {
   color: #f20f18;
   font-weight: bold;
 }
@@ -37,77 +36,133 @@ transition: 0.4s;
 margin-bottom: 15px;
 }
 
-.container-menu {
-  width: 80%;
-  overflow: hidden;
+.container{
+  max-width: 1000px;
+  width: 90%;
+}
+.slider-wrapper {
   position: relative;
 }
 
-.carousel {
-  display: flex;
-  transition: transform 0.5s ease;
-}
-
-.carousel-item-menu {
-  flex: 0 0 33.33%; /* 33.33% para exibir 3 itens por vez */
-  text-align: center; /* Alinha as imagens no centro */
-  display: flex; /* Adiciona display flex para centralizar a imagem */
-  justify-content: space-around; /* Centraliza a imagem horizontalmente */
-  
-}
-
-.carousel-item-menu img {
-  max-width: 150%; /* Define um tamanho máximo para as imagens */
-  max-height: 250px; /* Define uma altura máxima para as imagens */
-}
-
-.menu-controls {
+.slider-wrapper .slide-btn{
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: rgb(19, 15, 15);
+  border: none;
+}
+.slider-wrapper .slide-btn#prev-slide{
+left: -20px;
+}
+.slider-wrapper .slide-btn#next-slide{
+right: -20px;
+}
+
+.slider-wrapper .slide-btn:hover{
+background-color: #444;
+
+}
+.slider-wrapper
+.image-list {
+display: grid;
+gap: 18px;
+font-size: 0;
+margin-bottom: 10px;
+overflow-x: auto;
+scrollbar-width: none;
+grid-template-columns: repeat(10, 1fr);
+}
+.slider-wrapper
+.image-list ::-webkit-scrollbar{
+display: none;
+}
+
+.container .slider-scrollbar{
+  height: 10px;
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+
+}
+.slider-scrollbar .scrollbar-track{
+  height: 3px;
+  width: 100%;
+  position: relative;
+  background-color: #fff;
+  border-radius: 4px;
 }
 
-.menu-control {
-  cursor: pointer;
-  color: #ffffff;
-  background-color: transparent;
-  padding: 10px;
-  border: none;
-  font-size:35px;
+.slider-scrollbar:hover .scrollbar-track{
+  height: 5px;
+
 }
 
-.menu-control:hover {
-  color: #f20f18; /* Altera a cor do texto ao passar o mouse sobre o botão */
+.slider-scrollbar .scrollbar-thumb{
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  background-color: #f20f18 ;
+  cursor: grab;
+  border-radius: inherit;
+}
+.slider-scrollbar .scrollbar-track:active{
+cursor: grab;
+height: 8px;
+top:-2px
+
+}
+
+.slider-scrollbar .scrollbar-thumb::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -10px;
+  bottom: -10px;
+
+}
+
+.slider-wrapper .image-list .image-item{
+  width: 300px;
+  height: 325px;
+  object-fit: cover;
 }
 
 
+
+@media (max-width: 1024px) {
+  #menu{
+    min-height: 50vh;
+  }
+  .slider-wrapper .slide-btn{
+    display: none !important;
+  }
+  .slider-wrapper .image-list{
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  .slider-wrapper .image-list .image-item{
+    width: 280px;
+    height: 325px;
+    object-fit: cover;
+}
+.slider-scrollbar .scrollbar-thumb{
+  width: 20%;
+  
+}
+
+  
+}
 
 @media (max-width: 768px) {
-  .carousel-item-menu {
-    flex: 0 0 100%; 
-    margin-bottom: 30px
+  #menu{
+    min-height: 30vh;
   }
-
-.carousel-item-menu img{
-  background-size: cover;
-  max-width: 80%;
-  max-height: 80%;
-}
-.menu-controls {
-  position: absolute;
-  top: calc(50% - 45px); /* Ajuste a posição vertical dos botões */
-  left: 0;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  z-index: 1;
-}
-
-.menu-control {
-  padding: 5px; /* Reduza o tamanho dos botões */
-  font-size: 25px; /* Reduza o tamanho do ícone */
-}
+ 
 }

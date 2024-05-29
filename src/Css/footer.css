@@ -90,7 +90,7 @@
 /* Responsivo para dispositivos móveis */
 @media (max-width: 768px) {
   #contato{
-  margin-top: 10vh;
+ margin:0
   }
 
   .col-md-6 {
@@ -121,4 +121,8 @@
   .certificado img {
     max-width: 50px;
   }
+}
+@media (max-width: 1024px) {
+#contato{
+margin-top: 5rem;}
 }
