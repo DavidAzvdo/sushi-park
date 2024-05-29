@@ -3,8 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
-  overflow: hidden;
+  min-height: 100vh; 
 }
 
 #menu p {
@@ -155,14 +154,5 @@ top:-2px
 .slider-scrollbar .scrollbar-thumb{
   width: 20%;
   
-}
-
-  
-}
-
-@media (max-width: 768px) {
-  #menu{
-    min-height: 30vh;
-  }
- 
+} 
 }

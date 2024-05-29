@@ -1,6 +1,6 @@
 header {
   width: 100%;
-  padding: 15px 8%;
+  padding: 28px 8%;
   background-color: rgba(24, 24, 24, 0.352); /* Define a cor de fundo com opacidade */
 }
 
@@ -10,6 +10,7 @@ header {
   align-items: center;
   justify-content: space-between;
 }
+
 
 .logo h1 {
   font-size: 35px;
@@ -25,7 +26,6 @@ header {
 .logo img {
   display: flex;
   width: 100px;
-  justify-content: space-between;
 }
 
 .logo {
@@ -89,7 +89,10 @@ header {
 }
 
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1170px) {
+  header{
+    max-width: 100%;
+  }
   #nav-list,
   #nav-bar .btn-default {
     display: none;

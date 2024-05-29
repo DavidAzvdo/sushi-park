@@ -5,14 +5,15 @@
   padding: 0;
   box-sizing: border-box;
 }
+html body{
+  overflow-x: hidden;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  position: relative;
-  overflow-x: hidden !important;
-
 }
 
 body::before {
@@ -28,14 +29,16 @@ body::before {
   z-index: -1;
 }
 
+section{
+  padding: 28px 8%;
+}
 
-#home,
-#menu,
-#reviews,
-#contato {
-  width: 100%;
-  max-width: 100%;
-  padding-left: 8%;
-  padding-right: 8%;
-  box-sizing: border-box;
+@media (max-width: 1024px) {
+  body{
+    overflow-x: hidden !important;
+  }
+  body::before{
+    max-width: auto
+    ;
+  }
 }

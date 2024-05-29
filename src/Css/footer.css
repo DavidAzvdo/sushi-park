@@ -18,7 +18,8 @@
   transition: 0.4s;
 }
 
-.container {
+.container-footer {
+  display: fle;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
