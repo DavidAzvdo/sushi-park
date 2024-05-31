@@ -89,7 +89,7 @@
 }
 
 /* Responsivo para dispositivos móveis */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   #contato{
  margin:0
   }
