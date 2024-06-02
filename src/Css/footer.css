@@ -1,13 +1,12 @@
 #contato {
-  background-color: rgba(24, 24, 24, 0.352); /* Define a cor de fundo com opacidade */
-  padding: 10px 0; /* Reduzir o padding vertical */
+  background-color: rgba(24, 24, 24, 0.352); 
   color: #fff;
   margin-top: 35vh;
 }
 
 #contato h2 {
   text-align: center;
-  margin-bottom: 10px; /* Reduzir a margem inferior */
+  margin-bottom: 10px; 
   font-weight: bold;
   font-size: 30px;
 }
@@ -19,10 +18,8 @@
 }
 
 .container-footer {
-  display: fle;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 15px;
 }
 
 .row {
@@ -38,11 +35,11 @@
 
 .info-left,
 .info-right {
-  padding: 10px; /* Reduzir o padding interno */
+  padding: 10px; 
 }
 
 .info-left p {
-  margin-bottom: 10px; /* Reduzir a margem inferior */
+  margin-bottom: 10px; 
   font-size: 15px;
 }
 
@@ -58,7 +55,7 @@
 }
 
 .social-media {
-  margin-bottom: 10px; /* Reduzir a margem inferior */
+  margin-bottom: 10px; 
   text-align: center;
 }
 
@@ -75,7 +72,7 @@
 
 .certificado {
   text-align: center;
-  margin-bottom: 10px; /* Reduzir a margem inferior */
+  margin-bottom: 10px; 
 }
 
 .certificado img {
@@ -85,7 +82,11 @@
 .copyright {
   font-size: 11px;
   text-align: center;
-  margin-top: 10px; /* Reduzir a margem superior */
+  margin-top: 10px; 
+}
+.copyright a{
+  text-decoration: none;
+color: #fff;
 }
 
 /* Responsivo para dispositivos móveis */

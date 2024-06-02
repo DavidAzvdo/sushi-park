@@ -9,7 +9,9 @@
 body {
   font-family: 'Poppins', sans-serif;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body::before {
   content: "";
   position: fixed;
@@ -23,9 +25,7 @@ body::before {
   z-index: -1;
 }
 
-section{
-  padding: 28px 8%;
-}
+
 
 @media (max-width: 1024px) {
   body::before {
