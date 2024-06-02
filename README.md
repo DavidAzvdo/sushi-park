@@ -27,7 +27,7 @@ Para visualizar o site localmente, siga estas etapas:
 ## Autor
 Este projeto foi desenvolvido por David Azevedo. Você pode encontrá-lo no [Linkedin](https://www.linkedin.com/in/david-azevedo-568086157/)
 
-##Licença
+## Licença
 Este projeto está sob a licença MIT
 
 
